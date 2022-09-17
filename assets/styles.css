@@ -17,8 +17,17 @@ body {
   padding: 0 15px;
 }
 
+/* HEADER */
+
 .header {
   background-color: rgba(0, 0, 0, 0.2);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 .header__inner {
@@ -43,4 +52,34 @@ body {
 
 .nav__link.active {
   background-color: blue;
+}
+
+/* INTRO */
+
+.intro {
+  background: #fff url("/assets/img/intro.png") no-repeat center;
+  background-size: cover;
+}
+
+.intro__inner {
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.intro__text {
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+}
+
+.intro__countries {
+  font-size: 15px;
+}
+
+.intro__logo {
+  line-height: 0.9;
+  font-size: 110px;
 }
