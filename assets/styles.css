@@ -80,6 +80,73 @@ body {
 }
 
 .intro__logo {
+  position: relative;
   line-height: 0.9;
   font-size: 110px;
+}
+
+.intro__logo-amp {
+  position: absolute;
+  font-size: 170px;
+  color: rgba(255, 255, 255, 0.2);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* REQUEST FORM */
+
+.request-form {
+  max-width: 400px;
+  width: 100%;
+
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.request-form__header {
+  padding: 20px 30px;
+  background-color: #033fc9;
+}
+
+.request-form__tittle {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.request-form__text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+.request-form__content {
+  background-color: #004af2;
+  padding: 30px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border: none;
+  background: none;
+
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.input::placeholder {
+  font-size: 16px;
+  color: #fff;
+}
+
+input:focus {
+  font-family: "PT Sans", sans-serif;
+  outline: none;
+  border-bottom-color: #fff;
 }
