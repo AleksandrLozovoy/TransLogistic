@@ -138,6 +138,10 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+  transition: border-bottom-color 0.1s linear;
+
+  padding-left: 50px;
 }
 
 .input::placeholder {
@@ -149,4 +153,16 @@ input:focus {
   font-family: "PT Sans", sans-serif;
   outline: none;
   border-bottom-color: #fff;
+}
+
+.input--text {
+  background: url(../assets/img/icon-form1.svg) left 15px top 3px no-repeat;
+}
+
+.input--phone {
+  background: url(../assets/img/icon-form2.svg) left 15px top 3px no-repeat;
+}
+
+.input--email {
+  background: url(../assets/img/icon-form.svg) left 15px top 7px no-repeat;
 }
