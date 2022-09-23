@@ -59,6 +59,7 @@ body {
 .intro {
   background: #fff url("/assets/img/intro.png") no-repeat center;
   background-size: cover;
+  margin-bottom: 30px;
 }
 
 .intro__inner {
@@ -102,6 +103,11 @@ body {
 
   border-radius: 5px;
   overflow: hidden;
+}
+
+.request-form--intro {
+  position: relative;
+  bottom: -20px;
 }
 
 .request-form__header {
@@ -165,4 +171,47 @@ input:focus {
 
 .input--email {
   background: url(../assets/img/icon-form.svg) left 15px top 7px no-repeat;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 11px 20px;
+  font-weight: 700;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: center;
+  color: #fff;
+  background: rgb(12, 12, 12);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn--orange {
+  background-image: linear-gradient(to right, #ff903e, #ff2c2c);
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* SERVICES */
+.section {
+  padding: 60px 0;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.services__item {
+  width: 25%;
+  padding: 30px 25px;
 }
