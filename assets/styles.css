@@ -230,6 +230,10 @@ input:focus {
   padding: 60px 0;
 }
 
+.section--gray {
+  background-color: #f9f9f9;
+}
+
 .section--map {
   background: url("../assets/img/map.svg") no-repeat left 30px center;
 }
@@ -472,4 +476,55 @@ input:focus {
   color: #585858;
   font-size: 15px;
   line-height: 1.4;
+}
+
+/* TEAM */
+.team {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__col {
+  width: 33.3333%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.img-shadow {
+  box-shadow: ;
+}
+
+.team__name {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: #2c2c2c;
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.team__profession {
+  color: #585858;
+  font-size: 15px;
+  margin-bottom: 11px;
+}
+
+.team__contacts {
+  color: #585858;
+  font-size: 14px;
+}
+
+.team__contacts li {
+  margin-bottom: 9px;
+}
+.team__contacts a {
+  color: #585858;
+  font-size: 14px;
+  text-decoration: none;
+  padding-left: 5px;
+}
+
+.team__contacts a:hover {
+  text-decoration: underline;
 }
