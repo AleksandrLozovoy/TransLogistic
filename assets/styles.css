@@ -4,6 +4,10 @@ body {
   font-size: 15px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 *,
 *:after,
 *:before {
@@ -196,6 +200,31 @@ input:focus {
 
 .input--email {
   background: url(../assets/img/icon-form.svg) left 15px top 7px no-repeat;
+}
+
+.input--dark {
+  color: #2c2c2c;
+  border-bottom-color: #e8e8e8;
+}
+
+.input--dark::placeholder {
+  color: #2c2c2c;
+}
+
+.input--dark:focus {
+  color: #000;
+}
+
+.input--text.input--dark {
+  background: url(../assets/img/black-person.svg) left 15px top 3px no-repeat;
+}
+
+.input--phone.input--dark {
+  background: url(../assets/img/black-phone.svg) left 15px top 3px no-repeat;
+}
+
+.input--email.input--dark {
+  background: url(../assets/img/black-mail.svg) left 15px top 7px no-repeat;
 }
 
 /* BUTTON */
@@ -665,4 +694,106 @@ input:focus {
 
 .footer__nav a {
   margin: 0 5px;
+}
+
+/* Modals */
+.modals {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+modals.show {
+  display: flex;
+}
+.modals__inner {
+  position: relative;
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+}
+
+.modals__header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.modals__tittle {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #004af2;
+  font-weight: 900;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.modals__text {
+  font-size: 15px;
+  color: #2c2c2c;
+}
+
+.modals__footer {
+  border-top: #e8e8e8 1px solid;
+  margin: 25px;
+  padding: 25px 25px 0 25px;
+  text-align: center;
+}
+
+.modals__footer-tittle {
+  font-size: 18px;
+  color: #2c2c2c;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.modals__adress {
+  color: #2c2c2c;
+  font-size: 15px;
+}
+
+.modals__adress a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.modals__adress a:hover {
+  text-decoration: underline;
+}
+
+.modals__adress p {
+  margin: 1px;
+}
+
+.modals__btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  top: -20px;
+  right: -30px;
+
+  transition: transform 0.2s linear;
+}
+
+.modals__btn:hover {
+  transform: rotate(90deg);
+}
+
+.modals__btn img {
+  display: block;
+}
+
+.modals__like {
+  margin-bottom: 15px;
 }
