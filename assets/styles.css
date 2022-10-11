@@ -4,6 +4,12 @@ body {
   font-size: 15px;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -101,6 +107,12 @@ ol {
 .intro--blog {
   height: 350px;
   background: #fff url("/assets/img/blog-intro.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.intro--text {
+  height: 350px;
+  background: #fff url("/assets/img/text-intro.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -695,6 +707,7 @@ input:focus {
   background-position: left 0 bottom -10px, right 0 bottom -10px;
   text-align: center;
   padding-bottom: 50px;
+  margin-top: auto;
 }
 
 .footer__logo {
@@ -832,4 +845,63 @@ modals.show {
 
 .main__col {
   width: 50%;
+}
+
+/*  TEXT */
+.text {
+  max-width: 800px;
+  font-size: 18px;
+  color: #585858;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+  margin-bottom: 20px;
+  color: #2c2c2c;
+  font-weight: 700px;
+}
+
+.text h2 {
+  font-size: 27px;
+}
+
+.text h3 {
+  font-size: 24px;
+}
+
+.text h4 {
+  font-size: 21px;
+}
+
+.text h5 {
+  font-size: 18px;
+}
+
+.text h6 {
+  font-size: 15px;
+}
+
+.text ol,
+.text ul {
+  margin-bottom: 20px;
+}
+
+.text ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.text img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
