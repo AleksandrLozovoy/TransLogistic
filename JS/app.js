@@ -1,3 +1,5 @@
+// HeaderCroll
+
 $(function () {
   let intro = $("#intro");
   let introH = intro.innerHeight();
@@ -7,6 +9,8 @@ $(function () {
   headerScrool();
 
   $(window).on("scroll resize", function () {
+    introH = intro.innerHeight();
+    headerH = header.innerHeight();
     headerScrool();
   });
 
