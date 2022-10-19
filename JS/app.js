@@ -32,9 +32,38 @@ $(function () {
 
     $("html, body").animate(
       {
-        scrollTop: scrollElPos - 2.8 * headerH,
+        scrollTop: scrollElPos - headerH,
       },
       500
     );
   });
+
+  // ScrollSpy
+  let windowH = $(window).height();
+  let scrollTop = $(this).scrollTop();
+
+  scrollSpy(scrollTop);
+
+  $(window).on("scroll", function () {
+    scrollTop = $(this).scrollTop();
+
+    scrollSpy(scrollTop);
+  });
+
+  function scrollSpy(scrollTop) {
+    $("[data-scrollspy]").each(function () {
+      let $this = $(this);
+      let sectionId = $this.data("scrollspy");
+      let sectionOffset = $this.offset().top;
+
+      if (scrollTop >= sectionOffset - 0.33333 * windowH) {
+        $("#nav [data-scroll]").removeClass("active");
+        $('#nav [data-scroll="' + sectionId + '"]').addClass("active");
+      }
+
+      if (scrollTop == 0) {
+        $("#nav [data-scroll]").removeClass("active");
+      }
+    });
+  }
 });

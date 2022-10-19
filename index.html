@@ -20,13 +20,11 @@
       <header class="header" id="header">
         <div class="container">
           <div class="header__inner">
-            <a href="index.html"
+            <a data-scroll="#intro"
               ><img src="/assets/img/icon.png" alt="logo"
             /></a>
-            <nav class="nav">
-              <a class="nav__link active" data-scroll="#Services" href="#"
-                >Services</a
-              >
+            <nav class="nav" id="nav">
+              <a class="nav__link" data-scroll="#Services" href="#">Services</a>
               <a class="nav__link" data-scroll="#Clients" href="#">Clients</a>
               <a class="nav__link" data-scroll="#Benefits" href="#">Benefits</a>
               <a class="nav__link" data-scroll="#Team" href="#">Team</a>
@@ -91,9 +89,9 @@
       <!-- /Intro -->
 
       <!-- SERVICES -->
-      <section class="section">
+      <section class="section" id="Services" data-scrollspy="#Services">
         <div class="container">
-          <div class="services" id="Services">
+          <div class="services">
             <h2 class="services__main-tittle">Services</h2>
             <div class="services__item">
               <h4 class="services__tittle">Ground shipping</h4>
@@ -154,10 +152,14 @@
       </section>
 
       <!-- CLIENTS -->
-      <section class="section section--map">
+      <section
+        class="section section--map"
+        id="Clients"
+        data-scrollspy="#Clients"
+      >
         <div class="container">
           <div class="section__tittle"><span>Our</span> clients</div>
-          <div class="clients" id="Clients">
+          <div class="clients">
             <div class="clients__logos">
               <ul class="clients__list">
                 <li>
@@ -272,10 +274,10 @@
       </section>
 
       <!-- Benefits -->
-      <section class="section">
+      <section class="section" id="Benefits" data-scrollspy="#Benefits">
         <div class="container">
           <h2 class="section__tittle"><span>Our</span> Benefits</h2>
-          <div class="benefits" id="Benefits">
+          <div class="benefits">
             <div class="benefits__col">
               <ul class="benefits-list">
                 <li class="benefits-list__item">
@@ -318,10 +320,10 @@
       </section>
 
       <!-- TEAM -->
-      <section class="section section--gray">
+      <section class="section section--gray" id="Team" data-scrollspy="#Team">
         <div class="container">
           <div class="section__tittle"><span>Our</span> Team</div>
-          <div class="team" id="Team">
+          <div class="team">
             <div class="team__col">
               <img
                 src="/assets/img/Team/team-1.jpg"
@@ -397,10 +399,10 @@
       </section>
 
       <!-- MISSION -->
-      <section class="section">
+      <section class="section" id="Mission" data-scrollspy="#Mission">
         <div class="container">
           <h2 class="mission__name">Our mission</h2>
-          <div class="mission" id="Mission">
+          <div class="mission">
             <h3 class="mission__tittle">
               To Provide Our Customer Qualified Services According The
               Iinternational
@@ -418,10 +420,10 @@
       </section>
 
       <!-- ARTICLES -->
-      <section class="section">
+      <section class="section" id="Articles" data-scrollspy="#Articles">
         <div class="container">
           <div class="section__tittle"><span>Interesting</span> to read</div>
-          <div class="articles" id="Articles">
+          <div class="articles">
             <article class="articles__item">
               <h4 class="articles__tittle"><a href="">News tittle</a></h4>
               <div class="articles__content">
