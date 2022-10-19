@@ -24,11 +24,14 @@
               ><img src="/assets/img/icon.png" alt="logo"
             /></a>
             <nav class="nav">
-              <a class="nav__link active" href="#">Home</a>
-              <a class="nav__link" href="#">Clients</a>
-              <a class="nav__link" href="#">Benefits</a>
-              <a class="nav__link" href="#">Team</a>
-              <a class="nav__link" href="#">News</a>
+              <a class="nav__link active" data-scroll="#Services" href="#"
+                >Services</a
+              >
+              <a class="nav__link" data-scroll="#Clients" href="#">Clients</a>
+              <a class="nav__link" data-scroll="#Benefits" href="#">Benefits</a>
+              <a class="nav__link" data-scroll="#Team" href="#">Team</a>
+              <a class="nav__link" data-scroll="#Mission" href="#">Mission</a>
+              <a class="nav__link" data-scroll="#Articles" href="#">News</a>
               <a class="nav__link" href="#">Contact us</a>
             </nav>
 
@@ -90,7 +93,7 @@
       <!-- SERVICES -->
       <section class="section">
         <div class="container">
-          <div class="services">
+          <div class="services" id="Services">
             <h2 class="services__main-tittle">Services</h2>
             <div class="services__item">
               <h4 class="services__tittle">Ground shipping</h4>
@@ -154,7 +157,7 @@
       <section class="section section--map">
         <div class="container">
           <div class="section__tittle"><span>Our</span> clients</div>
-          <div class="clients">
+          <div class="clients" id="Clients">
             <div class="clients__logos">
               <ul class="clients__list">
                 <li>
@@ -272,7 +275,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__tittle"><span>Our</span> Benefits</h2>
-          <div class="benefits">
+          <div class="benefits" id="Benefits">
             <div class="benefits__col">
               <ul class="benefits-list">
                 <li class="benefits-list__item">
@@ -318,7 +321,7 @@
       <section class="section section--gray">
         <div class="container">
           <div class="section__tittle"><span>Our</span> Team</div>
-          <div class="team">
+          <div class="team" id="Team">
             <div class="team__col">
               <img
                 src="/assets/img/Team/team-1.jpg"
@@ -397,7 +400,7 @@
       <section class="section">
         <div class="container">
           <h2 class="mission__name">Our mission</h2>
-          <div class="mission">
+          <div class="mission" id="Mission">
             <h3 class="mission__tittle">
               To Provide Our Customer Qualified Services According The
               Iinternational
@@ -418,7 +421,7 @@
       <section class="section">
         <div class="container">
           <div class="section__tittle"><span>Interesting</span> to read</div>
-          <div class="articles">
+          <div class="articles" id="Articles">
             <article class="articles__item">
               <h4 class="articles__tittle"><a href="">News tittle</a></h4>
               <div class="articles__content">
@@ -450,6 +453,8 @@
           <a href="blog.html" class="btn btn--orange">Visit blog</a>
         </div>
       </section>
+
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="container">
           <a href="index.html"
@@ -559,7 +564,7 @@
       </div>
     </div>
 
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
     <script src="/JS/app.js"></script>
   </body>
 </html>
