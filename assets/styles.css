@@ -761,7 +761,12 @@ input:focus {
   overflow: auto;
 }
 
-modals.show {
+.modals__content {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+.modals.show {
   display: flex;
 }
 .modals__inner {
@@ -825,7 +830,7 @@ modals.show {
   margin: 1px;
 }
 
-.modals__btn {
+.modals__close {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -838,11 +843,15 @@ modals.show {
   transition: transform 0.2s linear;
 }
 
-.modals__btn:hover {
+.modals__close:hover {
   transform: rotate(90deg);
 }
 
-.modals__btn img {
+.modals__close:focus {
+  outline: none;
+}
+
+.modals__close img {
   display: block;
 }
 
