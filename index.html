@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
       rel="stylesheet"
     />
-    <script src="/assets/slick.css"></script>
+    <link rel="stylesheet" href="/assets/slick.css" />
     <link rel="stylesheet" href="/assets/styles.css" />
     <title>Logistic</title>
   </head>
@@ -42,12 +42,21 @@
       </header>
       <!-- INTRO -->
       <div class="intro" id="intro">
-        <div class="intro__slider" id="intro-slider">
-          <img
-            src="/assets/img/intro.png"
-            alt="intro"
-            class="intro__slider-photo"
-          />
+        <div class="intro__slider" id="introSlider">
+          <div>
+            <img
+              src="/assets/img/intro.png"
+              alt="intro"
+              class="intro__slider-photo"
+            />
+          </div>
+          <div>
+            <img
+              src="/assets/img/blog-intro.jpg"
+              alt="intro"
+              class="intro__slider-photo"
+            />
+          </div>
         </div>
         <div class="container">
           <div class="intro__inner">
@@ -90,6 +99,22 @@
                 <span class="intro__logo-amp">&amp</span>
                 Trans <br />Logistic
               </div>
+            </div>
+            <div class="intro__slider-arrows">
+              <button
+                class="intro__slider-prev"
+                id="introSliderPrev"
+                type="button"
+              >
+                left
+              </button>
+              <button
+                class="intro__slider-next"
+                id="introSliderNext"
+                type="button"
+              >
+                right
+              </button>
             </div>
           </div>
         </div>

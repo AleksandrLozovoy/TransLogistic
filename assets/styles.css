@@ -136,11 +136,53 @@ ol {
   z-index: 1;
 }
 
+.intro__slider .slick-list,
+.intro__slider .slick-track {
+  height: 100%;
+}
+
 .intro__slider-photo {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+.intro__slider-arrows {
+  position: absolute;
+  bottom: 30px;
+  left: 450px;
+  pointer-events: auto;
+}
+
+.intro__slider-prev {
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  background: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  margin-right: 7px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.intro__slider-next {
+  padding: 0;
+  color: transparent;
+  font-size: 0;
+  background: none;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .intro__inner {
@@ -150,6 +192,7 @@ ol {
   align-items: flex-end;
   justify-content: space-between;
   z-index: 2;
+  pointer-events: none;
 }
 
 .intro__text {
@@ -191,6 +234,7 @@ ol {
 .request-form--intro {
   position: relative;
   bottom: -20px;
+  pointer-events: auto;
 }
 
 .request-form--right {
