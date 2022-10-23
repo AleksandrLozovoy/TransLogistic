@@ -120,6 +120,8 @@ $(function () {
   }
 
   // SLIDER https://kenwheeler.github.io/slick/
+  // introSlider
+
   let introSlider = $("#introSlider");
 
   introSlider.slick({
@@ -139,4 +141,15 @@ $(function () {
   $("#introSliderNext").on("click", function () {
     introSlider.slick("slickNext");
   });
+});
+
+// reviewsSlider
+let reviewsSlider = $("#reviewsSlider");
+
+reviewsSlider.slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true,
 });
