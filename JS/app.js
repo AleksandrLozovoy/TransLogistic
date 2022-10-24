@@ -1,4 +1,16 @@
 $(function () {
+  // NavToggle
+  let navToggle = $("#navToggle");
+  let nav = $("#nav");
+
+  navToggle.on("click", function (event) {
+    event.preventDefault();
+
+    nav.toggleClass("show");
+    $("body").toggleClass("show-nav");
+    $(this).addClass("active");
+  });
+
   // HeaderCroll
   let intro = $("#intro");
   let introH = intro.innerHeight();
@@ -29,6 +41,9 @@ $(function () {
 
     let scrollEl = $(this).data("scroll");
     let scrollElPos = $(scrollEl).offset().top;
+
+    navToggle.removeClass("active");
+    nav.removeClass("show");
 
     $("html, body").animate(
       {
